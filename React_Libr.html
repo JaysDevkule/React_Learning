@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>REACT Virtual DOM</title>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <!-- Don't use this in production -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <Body>
+        <div id="root"></div>
+    </Body>
+        <script type="text/babel">
+            const element=(<ul>
+                <li style={{color:"red",backgroundColor:"black"}}>Full name:Jays</li>
+                <li>Education: BE</li>
+                <li>Address:Pune</li>
+                </ul>
+            );
+            ReactDOM.render(element,document.getElementById('root'))
+            </script>
+    </html>
